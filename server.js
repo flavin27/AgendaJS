@@ -1,5 +1,8 @@
 const express = require('express');
 const app = express();
+const mongoose = require('mongoose')
+const connectionString = 'mongodb+srv://Flavio:<password>@cluster01.1odxbt6.mongodb.net/?retryWrites=true&w=majority'
+mongoose.connect(connectionString)
 const routes = require('./routes')
 const path = require('path')
 
