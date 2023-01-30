@@ -1,3 +1,3 @@
-exports.index = (req, res) => {
+exports.paginaInicial = (req, res) => {
     res.send('index')
 }
