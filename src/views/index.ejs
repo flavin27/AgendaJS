@@ -1,5 +1,87 @@
+<!doctype html>
+<html lang="pt-br" >
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<%- include('includes/head') %>
-<h1>Hello, world!</h1>
-<%- include('includes/footer') %>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-DOXMLfHhQkvFFp+rWTZwVlPVqdIhpDVYT9csOnHSgWQWPX0v5MCGtjCJbY6ERspU" crossorigin="anonymous">
 
+    <title> Meu site</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Projeto</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Objetivos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Outros projetos</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+        <header class="container my-4">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <h1 class=" text-center text-md-end">Projeto Bootstrap</h1>
+                    <p class="lead text-center text-md-end text-muted">A ideia é so fazer um site responsivo, mas to meio sem ideia pro conteudo</p>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <img src="https://i.kym-cdn.com/photos/images/original/001/256/183/9d5.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row my-5 shadow-3">
+                <div class="col-4">
+                    <div class="card border-1" >
+                        <i class="bi bi-toggles text-primary ms-3" style = "font-size: 3rem; "></i>
+                        <img src="https://i.rtings.com/assets/products/l3QhIc1S/apple-macbook-air-13-m1-2020/design-medium.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Por que todo dev rico tem um desses?.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card border-1">
+                        <i class="bi bi-toggles text-primary ms-3" style = "font-size: 3rem; "></i>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJEYrHthmHPvatRsvDIiGbv4H7fDJ6zq9V6w&usqp=CAU" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Espero que um dia eu tenha pelo menos grana pra ter um .</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card border-1">
+                        <i class="bi bi-toggles text-primary ms-3" style = "font-size: 3rem; "></i>
+                        <img src="https://www.01net.com/app/uploads/2019/12/29bf9a4c4d8c73b3b354db00f461a.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Até que vendo essa foto da uma vontadezinha de comprar....</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="container-fluid">
+            <div class="row bg-dark text-light text-start">
+                <p>Projeto feito pelo <a style="text-decoration: none; color: white " href="https://github.com/flaviodev27">Flavio</a></p>
+            </div>
+        </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    </body>
+</html>

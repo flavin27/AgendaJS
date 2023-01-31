@@ -1,3 +1,8 @@
 exports.paginaInicial = (req, res) => {
-    res.send('index')
+    res.render('index')
+}
+
+exports.trataPost = (res, req) => {
+    res.send(req.body)
+    return
 }
