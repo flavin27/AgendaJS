@@ -4,13 +4,22 @@ const LoginSchema = new mongoose.Schema({
     email: {type: String, required: true},
     password: {type: String, required: true}
 })
-const LoginModel = mongoose.model('Login', LoginSchema)
+const LoginModel = mongoose.model('Login', LoginSchema);
 
-class Login{
+class Login {
     constructor(body) {
         this.body = body
         this.errors = []
         this.user = null
+    }
+    valida() {
+        this.cleanUp()
+        if (!validator.isEmail(this.body.email)) {
+            this.errors.push('Email inválido!')
+        }
+        if (this.body.password.length < 3 || this.body.password.length > 50) {
+            this.errors.push('A senha ta errada')
+        }
     }
     register() {
         this.valida()
