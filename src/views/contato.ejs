@@ -8,7 +8,7 @@
     </div>
 </header>
 <%- include('includes/messages') %>
-<form class="form-login " action="/contato/register" method="POST">
+<form action="/contato/register" method="POST">
     <input type="hidden" name="_csrf" value=<%= csrfToken %>>
         <div class="form-group my-2">
             <label>Nome: </label>
