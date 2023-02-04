@@ -10,12 +10,16 @@
 <%- include('includes/messages') %>
 <div class="responsive-table">
     <table class="table my-4">
+        <% contatos.forEach(contato => { %>
         <tr>
-            <td>Nome</td>
-            <td>Sobrenome</td>
-            <td>Telefone</td>
-            <td>Email</td>
+            <td><%= contato.nome %></td>
+            <td><%= contato.sobrenome %></td>
+            <td><%= contato.email %></td>
+            <td><%= contato.telefone %></td>
+            <td><a href="/contato/index/<%= contato._id %>">Editar</a></td>
+            <td><a class="text-danger" href="/contato/delete/<%= contato._id %>">Excluir</a></td>
         </tr>
+        <%}); %>
     </table>
 </div>
 <%- include('includes/footer') %>
