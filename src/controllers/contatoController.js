@@ -51,3 +51,12 @@ exports.editIndex = async function(req, res) {
     if(!contato) return res.render('404');
     res.render('contato', { contato });
 };
+exports.delete = async (req, res) => {
+    if(!req.params.id) return res.render('404');
+    const contatos = new Contato(req.body)
+    const contato = await contatos.delete(req.params.id);
+    if(!contato) return res.render('404');
+    req.flash('success', 'Contato apagado com sucesso.');
+    req.session.save(() => res.redirect(`/`));
+    return;
+}

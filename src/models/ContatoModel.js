@@ -68,6 +68,13 @@ class Contato {
         const contato = await ContatoModel.findById(id);
         return contato;
     }
+    async delete(id) {
+        if (typeof id !== 'string') {
+            return
+        }
+        const contato = await ContatoModel.findOneAndDelete(id)
+        return contato
+    }
 }
 
 module.exports = Contato
